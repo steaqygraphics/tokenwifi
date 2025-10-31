@@ -1,15 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Konfigurasi Vite
+// Konfigurasi Vite default untuk aplikasi React
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      input: {
-        // Mendefinisikan main.jsx sebagai entry point
-        main: 'main.jsx', 
-      },
-    },
-  },
+  // Tidak ada konfigurasi 'build' kustom
+  // Ini akan menggunakan 'index.html' sebagai entry point
 });
