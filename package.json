@@ -1,0 +1,18 @@
+{
+  "name": "wifi-admin-app",
+  "version": "1.0.0",
+  "description": "WiFi Vending Admin Dashboard using React and Firestore.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "parcel build index.html --out-dir build"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-react-refresh": "^2.10.3",
+    "parcel": "^2.10.3"
+  }
+}
