@@ -1,19 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Konfigurasi Vite default untuk aplikasi React
+// Pastikan plugin @vitejs/plugin-react dimuat
 export default defineConfig({
   plugins: [react()],
-  // Konfigurasi ini biasanya tidak diperlukan di Canvas/Vercel, 
-  // tetapi disertakan untuk menghindari masalah path relatif.
-  resolve: {
-    alias: {
-      // Menggunakan alias untuk path absolut jika diperlukan
-      '@/': '/src/', 
-    },
-  },
-  // Pastikan output directory adalah 'dist'
-  build: {
-    outDir: 'dist',
-  }
+  // Tidak ada konfigurasi build atau root kustom.
+  // Vite akan otomatis menggunakan index.html dan dist.
 });
